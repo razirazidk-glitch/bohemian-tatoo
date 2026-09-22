@@ -16,6 +16,7 @@
   --gold-light: #faecc1;
   --gold-primary: #d4af37;
   --gold-dark: #a27b13;
+  --gold-gradient: linear-gradient(135deg, #faecc1 0%, #d4af37 50%, #a27b13 100%);
   --gold-glow: rgba(212, 175, 55, 0.28);
   --gold-border: rgba(212, 175, 55, 0.24);
   
@@ -197,6 +198,9 @@ section {
   font-size: 0.8rem;
   letter-spacing: 0.05em;
   color: var(--gold-light);
+  min-height: 38px;
+  display: flex;
+  align-items: center;
 }
 
 .announcement-inner {
@@ -204,6 +208,7 @@ section {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -212,6 +217,15 @@ section {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1 1 auto;
+}
+
+.announcement-text span[data-i18n="announcement"] {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -238,6 +252,8 @@ section {
   align-items: center;
   gap: 0.25rem;
   transition: all var(--transition-fast);
+  line-height: 1.2;
+  flex-shrink: 0;
 }
 
 .lang-btn:hover {
@@ -246,6 +262,15 @@ section {
   background: rgba(212, 175, 55, 0.12);
 }
 
+/* Pure CSS active state driven instantaneously by html[lang] attribute */
+html[lang="da"] .lang-selector .lang-btn[data-lang="da"],
+html[lang="en"] .lang-selector .lang-btn[data-lang="en"],
+html[lang="sv"] .lang-selector .lang-btn[data-lang="sv"],
+html[lang="de"] .lang-selector .lang-btn[data-lang="de"],
+html[lang="da"] .mobile-lang-selector .lang-btn[data-lang="da"],
+html[lang="en"] .mobile-lang-selector .lang-btn[data-lang="en"],
+html[lang="sv"] .mobile-lang-selector .lang-btn[data-lang="sv"],
+html[lang="de"] .mobile-lang-selector .lang-btn[data-lang="de"],
 .lang-btn.active {
   background: var(--gold-gradient);
   color: #0b0a0e;
@@ -271,7 +296,11 @@ section {
   font-size: 0.82rem;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 900px) {
+  .announcement-bar {
+    min-height: auto;
+    padding: 0.4rem 1rem;
+  }
   .announcement-inner {
     flex-direction: column;
     gap: 0.35rem;
@@ -463,24 +492,29 @@ section {
   margin-top: 0.65rem;
   padding-top: 0.65rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+  min-height: 52px;
+  flex-wrap: nowrap;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  gap: clamp(0.65rem, 1.25vw, 1.5rem);
   list-style: none;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .nav-link {
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: clamp(0.74rem, 0.82vw, 0.82rem);
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
   position: relative;
   padding: 0.4rem 0;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
@@ -520,7 +554,17 @@ section {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.header-actions .btn {
+  min-height: 38px;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
 }
 
 /* Mobile Hamburger Toggle */
@@ -1411,7 +1455,7 @@ select option {
 /* --------------------------------------------------------------------------
    RESPONSIVE MEDIA QUERIES (TABLET & MOBILE)
    -------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .about-grid, .location-grid, .booking-wrap {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1430,16 +1474,7 @@ select option {
     border-top: none;
     margin-top: 0.25rem;
     padding-top: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .announcement-bar {
-    font-size: 0.72rem;
-    padding: 0.35rem 0.75rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    min-height: 44px;
   }
 }
 

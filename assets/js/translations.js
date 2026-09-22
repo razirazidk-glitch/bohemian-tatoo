@@ -7,7 +7,7 @@ const translations = {
   da: {
     // Navigation & Common
     lang_name: 'Dansk',
-    announcement: '<strong>Bohemian Tattoo Parlour</strong> • Christiania, København • A Safe Space For Good Tattoos &amp; Good People',
+    announcement: '<strong>Bohémian Tattoo Parlour</strong> • Christiania, København • A Safe Space For Good Tattoos &amp; Good People',
     nav_home: 'Forside',
     nav_about: 'Om Studiet',
     nav_gallery: 'Tattoo Galleri',
@@ -146,7 +146,7 @@ const translations = {
   en: {
     // Navigation & Common
     lang_name: 'English',
-    announcement: '<strong>Bohemian Tattoo Parlour</strong> • Christiania, Copenhagen • A Safe Space For Good Tattoos &amp; Good People',
+    announcement: '<strong>Bohémian Tattoo Parlour</strong> • Christiania, Copenhagen • A Safe Space For Good Tattoos &amp; Good People',
     nav_home: 'Home',
     nav_about: 'About Studio',
     nav_gallery: 'Tattoo Gallery',
@@ -285,7 +285,7 @@ const translations = {
   sv: {
     // Navigation & Common
     lang_name: 'Svenska',
-    announcement: '<strong>Bohemian Tattoo Parlour</strong> • Christiania, Köpenhamn • A Safe Space For Good Tattoos &amp; Good People',
+    announcement: '<strong>Bohémian Tattoo Parlour</strong> • Christiania, Köpenhamn • A Safe Space For Good Tattoos &amp; Good People',
     nav_home: 'Hem',
     nav_about: 'Om Studion',
     nav_gallery: 'Tatuering Galleri',
@@ -424,7 +424,7 @@ const translations = {
   de: {
     // Navigation & Common
     lang_name: 'Deutsch',
-    announcement: '<strong>Bohemian Tattoo Parlour</strong> • Christiania, Kopenhagen • A Safe Space For Good Tattoos &amp; Good People',
+    announcement: '<strong>Bohémian Tattoo Parlour</strong> • Christiania, Kopenhagen • A Safe Space For Good Tattoos &amp; Good People',
     nav_home: 'Startseite',
     nav_about: 'Über Uns',
     nav_gallery: 'Tattoo Galerie',

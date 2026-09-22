@@ -266,6 +266,7 @@ function initI18n() {
   function applyLanguage(lang) {
     if (!supportedLangs.includes(lang)) lang = defaultLang;
     currentLang = lang;
+    window.__bt_current_lang = lang;
     localStorage.setItem('bt_lang', lang);
     document.documentElement.lang = lang;
 
