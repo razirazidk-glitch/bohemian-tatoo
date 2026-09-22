@@ -142,20 +142,6 @@ function initGalleryFiltersAndLightbox() {
   if (bookSimilarBtn) {
     bookSimilarBtn.addEventListener('click', () => {
       closeLightbox();
-      const styleSelect = document.getElementById('booking-style');
-      if (styleSelect && lightboxTag) {
-        // Match style in booking form
-        for (let i = 0; i < styleSelect.options.length; i++) {
-          if (lightboxTag.textContent.toLowerCase().includes(styleSelect.options[i].text.toLowerCase())) {
-            styleSelect.selectedIndex = i;
-            break;
-          }
-        }
-      }
-      const bookingSection = document.getElementById('booking');
-      if (bookingSection) {
-        bookingSection.scrollIntoView({ behavior: 'smooth' });
-      }
     });
   }
 

@@ -21,8 +21,8 @@ Webstedet er struktureret i separate, lynhurtige HTML-sider:
 3. **Tattoo Galleri (`galleri.html`)**: Komplet portfolio med 16+ værker, kategorifiltrering (*Blackwork, Realisme, Fine Line, Flash & Segl*) og fuldskærms Lightbox.
 4. **Artister & Team (`artister.html`)**: Profiler for Boricua (*Blackwork & Realisme*) og Nico Hagemann (*Fine Line & Botanik*) samt gæsteartister.
 5. **Hygiejne & Pleje (`hygiejne.html`)**: Lovpligtig godkendelse hos Sikkerhedsstyrelsen, 100% sterile engangsnåle, REACH-godkendt vegansk blæk og interaktiv Aftercare-guide.
-6. **Book Tid / Pris (`booking.html`)**: Interaktiv formular med artistvalg, sagsnummer (`BT-XXXXXX`) og direkte link til Instagram DM.
-7. **Find Os på Christiania (`kontakt.html`)**: Åbningstider, metro-vejvisning, gåtursrute, cykelparkering og Google Maps embed.
+6. **Find Os & Kontakt (`kontakt.html`)**: Studiets primære kontakthub med direkte links til Instagram DM, e-mail, Facebook, åbningstider (tirsdag–lørdag 12–20), rutevejledning og Google Maps embed.
+7. **Tidsbestilling Info (`booking.html`)**: Informationsside der viderestiller til kontaktsiden og forklarer, at al booking og henvendelse foregår personligt via Instagram DM eller e-mail.
 
 ---
 
