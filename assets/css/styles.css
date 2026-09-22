@@ -368,12 +368,26 @@ section {
   transition: width var(--transition-smooth);
 }
 
-.nav-link:hover, .nav-link:focus-visible {
+.nav-link.active {
   color: var(--gold-light);
 }
 
-.nav-link:hover::after, .nav-link:focus-visible::after {
+.nav-link.active::after {
   width: 100%;
+}
+
+/* Page Header for subpages */
+.page-header {
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  background: linear-gradient(180deg, rgba(20, 20, 28, 0.6) 0%, transparent 100%);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  position: relative;
+}
+
+.page-header .section-title {
+  margin-bottom: 0.5rem;
 }
 
 .header-actions {
