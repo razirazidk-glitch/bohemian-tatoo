@@ -1,39 +1,35 @@
-# Bohemian Tatoo — Christiania, København ✦
+# Bohemian Tattoo Parlour — Christiania, København ✦
 
 > 🌐 **Live Website Link**: [https://razirazidk-glitch.github.io/bohemian-tatoo/](https://razirazidk-glitch.github.io/bohemian-tatoo/)  
 > 📂 **GitHub Repository**: [https://github.com/razirazidk-glitch/bohemian-tatoo](https://github.com/razirazidk-glitch/bohemian-tatoo)  
-> 📸 **Instagram**: [@bohemiantattooparlour](https://www.instagram.com/bohemiantattooparlour/)
+> 📸 **Instagram**: [@bohemiantattooparlour](https://www.instagram.com/bohemiantattooparlour/) (Helst DM for bookinger)  
+> ✉️ **E-mail**: [info@bohemiantattooparlour.com](mailto:info@bohemiantattooparlour.com)  
+> 👤 **Facebook**: Bohemian tattoo parlour  
 
-Velkommen til det officielle websted for **Bohemian Tatoo** (Bohémian Tattoo Parlour), beliggende i hjertet af Fristaden Christiania i København.
+Velkommen til det officielle websted for **Bohemian Tattoo Parlour**, beliggende i hjertet af Fristaden Christiania i København.
 
-Dette websted er udviklet som en luksuriøs, responsiv og lynhurtig platform for tatovørstudiet. Designet forener Fristadens kreative, boheme ånd med kompromisløs professionalisme, klinisk hygiejne og moderne webstandarder.
-
----
-
-## ✦ Nøglefunktioner
-
-- **Centreret Branding i Toppen**: Skræddersyet gyldent boheme-emblem og typografi centreret i toppen for optimal genkendelighed.
-- **Responsivt på Alle Enheder**: Fuldt optimeret til både smartphones (iPhone/Android), tablets (iPad) og widescreen desktops.
-- **Interaktivt Galleri / Portfolio**: Kategorifiltrering (*Fineline & Botanisk*, *Sacred Geometry & Blackwork*, *Neo-Traditional*, *Nordisk & Dotwork*) med lynhurtig Lightbox modal-visning i høj opløsning.
-- **Resident Artister**: Præsentation af studiets tatovører (Freja Lind, Luka 'Mano', Elena Cruz) med specialer og direkte bookingforespørgsel.
-- **Klinisk Hygiejne & Tryghed**: Tydelig information om REACH-godkendt vegansk blæk, sterile engangsnåle og registrering hos Sikkerhedsstyrelsen.
-- **Interaktiv Efterbehandlingsguide**: Trin-for-trin guide til helingsprocessen (de første 24 timer, dag 2–14, forholdsregler og UV-beskyttelse).
-- **Booking & Prisforespørgsel**: Formular med automatisk sagsnummer samt direkte genveje til WhatsApp, Instagram Direct og telefonisk kontakt.
-- **Find Os på Christiania**: Rutevejledning fra Christianshavn Metro, åbningstider, walk-in dage samt Google Maps kort.
+Dette websted er udviklet som en dedikeret multi-page platform i luksuriøst mørkt boheme-design (jordfarver, obsidian, guld og natur).
 
 ---
 
-## ✦ Teknisk Arkitektur
+## ✦ Sider & Arkitektur
 
-- **HTML5 & CSS3**: Semantisk opbygget uden tunge afhængigheder for maksimal indlæsningshastighed og 100/100 Lighthouse score.
-- **Skræddersyet SVG & Fotografi**: Vektoriseret emblem og højkvalitets billedmateriale.
-- **Vanilla ES6+ JavaScript**: Letvægts interaktivitet uden eksterne tunge biblioteker.
-- **GitHub Pages Ready**: Kører direkte fra GitHub Pages med 0 build steps.
+Webstedet er struktureret i separate, lynhurtige HTML-sider:
+
+1. **Forside (`index.html`)**: Centreret master-branding, Hero-sektion med det svævende gyldne segl og overskuelige sektionsteasere.
+2. **Om Studiet (`om-os.html`)**: Fristadens ånd, boheme/hippie/krystal filosofi, *"A Safe Space For Good Tattoos & Good People"*, fotos af holdet foran facaden og studiets interiør.
+3. **Tattoo Galleri (`galleri.html`)**: Komplet portfolio med 16+ værker, kategorifiltrering (*Blackwork, Realisme, Fine Line, Flash & Segl*) og fuldskærms Lightbox.
+4. **Artister & Team (`artister.html`)**: Profiler for Boricua (*Blackwork & Realisme*) og Nico Hagemann (*Fine Line & Botanik*) samt gæsteartister.
+5. **Hygiejne & Pleje (`hygiejne.html`)**: Lovpligtig godkendelse hos Sikkerhedsstyrelsen, 100% sterile engangsnåle, REACH-godkendt vegansk blæk og interaktiv Aftercare-guide.
+6. **Book Tid / Pris (`booking.html`)**: Interaktiv formular med artistvalg, sagsnummer (`BT-XXXXXX`) og direkte link til Instagram DM.
+7. **Find Os på Christiania (`kontakt.html`)**: Åbningstider, metro-vejvisning, gåtursrute, cykelparkering og Google Maps embed.
 
 ---
 
-## ✦ Kontakt & Lokation
+## ✦ Åbningstider & Kontakt
 
-- **Adresse**: Mælkevejen / Fabriksområdet, Christiania, 1440 København K
-- **Åbningstider**: Tirsdag – Fredag: 11:00 – 18:00 | Lørdag: 11:00 – 17:00 (Søndag/Mandag efter aftale)
-- **Walk-in**: Tirsdag & Torsdag kl. 11:00 – 14:00
+- **Lokation**: Fristaden Christiania, 1440 København K, Danmark
+- **Åbningstider**: Tirsdag – Lørdag: 12:00 – 20:00 (samt særlige anledninger som fx Christianias fødselsdag)
+- **Søndag & Mandag**: Lukket eller efter særskilt aftale
+- **Booking & Spørgsmål**: Helst DM på Instagram [@bohemiantattooparlour](https://www.instagram.com/bohemiantattooparlour/)
+- **E-mail**: [info@bohemiantattooparlour.com](mailto:info@bohemiantattooparlour.com)

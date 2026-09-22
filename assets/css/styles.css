@@ -6,22 +6,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
-  /* Colors */
-  --bg-main: #0a0a0d;
-  --bg-surface: #121217;
-  --bg-card: rgba(22, 22, 30, 0.85);
-  --bg-card-hover: rgba(30, 30, 42, 0.95);
-  --bg-glass: rgba(18, 18, 24, 0.75);
+  /* Colors — Warm Bohemian Earth, Obsidian & Antique Gold */
+  --bg-main: #0b0a08;
+  --bg-surface: #14120f;
+  --bg-card: rgba(24, 21, 18, 0.88);
+  --bg-card-hover: rgba(34, 29, 24, 0.96);
+  --bg-glass: rgba(20, 17, 14, 0.78);
   
   --gold-light: #faecc1;
   --gold-primary: #d4af37;
   --gold-dark: #a27b13;
-  --gold-glow: rgba(212, 175, 55, 0.25);
-  --gold-border: rgba(212, 175, 55, 0.22);
+  --gold-glow: rgba(212, 175, 55, 0.28);
+  --gold-border: rgba(212, 175, 55, 0.24);
   
-  --text-main: #f3f3f6;
-  --text-muted: #a3a2aa;
-  --text-dim: #71707a;
+  /* Earth Tones & Mystical Accents */
+  --earth-warm: #8c5e3c;
+  --earth-sand: #d4b483;
+  --earth-deep: #432b1b;
+  --mystic-sage: #384d3e;
+  --mystic-smoke: #252220;
+  
+  --text-main: #f5f3ef;
+  --text-muted: #aba59c;
+  --text-dim: #7a746b;
   
   --accent-red: #c84d4d;
   --accent-green: #48bb78;
@@ -70,7 +77,7 @@ body {
   position: relative;
 }
 
-/* Subtle bohemian ambient background glow */
+/* Subtle bohemian, earthy & celestial ambient background glow */
 body::before {
   content: '';
   position: fixed;
@@ -80,9 +87,10 @@ body::before {
   width: 100vw;
   height: 100vh;
   background: 
-    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.07) 0%, transparent 60%),
-    radial-gradient(circle at 10% 40%, rgba(138, 75, 175, 0.03) 0%, transparent 40%),
-    radial-gradient(circle at 90% 70%, rgba(212, 175, 55, 0.04) 0%, transparent 50%);
+    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 15% 40%, rgba(140, 94, 60, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 85% 65%, rgba(56, 77, 62, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(212, 175, 55, 0.05) 0%, transparent 55%);
   pointer-events: none;
   z-index: -1;
 }

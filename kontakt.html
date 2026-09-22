@@ -7,6 +7,48 @@
   <meta name="description" content="Find vej til Bohémian Tattoo Parlour på Christiania, København. Se åbningstider, metro-vejvisning, kort og information om walk-in tatoveringer.">
   <link rel="icon" type="image/jpeg" href="assets/images/bohemian-master-logo.jpg">
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Schema.org Structured Data for Google Search & Google Maps -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TattooParlor",
+    "name": "Bohemian Tattoo Parlour",
+    "alternateName": ["Bohémian Tattoo Parlour Christiania", "Bohemian Tattoo Copenhagen"],
+    "image": "https://razirazidk-glitch.github.io/bohemian-tatoo/assets/images/bohemian-master-logo.jpg",
+    "logo": "https://razirazidk-glitch.github.io/bohemian-tatoo/assets/images/bohemian-master-logo.jpg",
+    "url": "https://razirazidk-glitch.github.io/bohemian-tatoo/kontakt.html",
+    "email": "info@bohemiantattooparlour.com",
+    "priceRange": "$$",
+    "currenciesAccepted": "DKK",
+    "paymentAccepted": "Cash, MobilePay, Credit Card",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Fristaden Christiania",
+      "addressLocality": "København K",
+      "postalCode": "1440",
+      "addressCountry": "DK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 55.673899,
+      "longitude": 12.598232
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "12:00",
+        "closes": "20:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/bohemiantattooparlour/",
+      "https://www.facebook.com/bohemiantattooparlour"
+    ],
+    "description": "Kontakt og find Bohémian Tattoo Parlour på Christiania i København K. Åbningstider tirsdag-lørdag 12-20. Helst DM på Instagram."
+  }
+  </script>
 </head>
 <body>
 
@@ -23,7 +65,7 @@
         <div class="logo-wrapper">
           <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Christiania Logo" class="brand-master-emblem" width="90" height="90">
         </div>
-        <h1 class="brand-title gold-gradient-text">BOHÉMIAN TATOO</h1>
+        <h1 class="brand-title gold-gradient-text">BOHÉMIAN TATTOO</h1>
         <span class="brand-tagline">PARLOUR • CHRISTIANIA, KØBENHAVN</span>
       </a>
 
@@ -65,7 +107,7 @@
     <div>
       <div class="brand-centerpiece" style="margin-bottom: 2rem;">
         <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Logo" class="brand-master-emblem" style="width: 72px; height: 72px; margin-bottom: 0.5rem;">
-        <span class="brand-title gold-gradient-text" style="font-size: 1.3rem;">BOHÉMIAN TATOO</span>
+        <span class="brand-title gold-gradient-text" style="font-size: 1.3rem;">BOHÉMIAN TATTOO</span>
         <span class="brand-tagline">CHRISTIANIA • KØBENHAVN</span>
       </div>
       <ul class="mobile-nav-links">
@@ -78,8 +120,8 @@
       </ul>
     </div>
     <div>
-      <a href="booking.html" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;">Book Konsultation</a>
-      <a href="https://www.instagram.com/bohemiantattooparlour/" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; margin-bottom: 1rem;">Følg på Instagram</a>
+      <a href="https://www.instagram.com/bohemiantattooparlour/" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;">DM på Instagram</a>
+      <a href="booking.html" class="btn btn-secondary" style="width: 100%; margin-bottom: 1rem;">Book Konsultation</a>
       <p style="font-size: 0.8rem; color: var(--text-dim); text-align: center;">Christiania, København • More Art Less Bullshit</p>
     </div>
   </div>
@@ -123,18 +165,39 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 <div>
                   <strong style="color: var(--text-main); display: block; font-size: 1.05rem;">Åbningstider</strong>
-                  <span style="color: var(--gold-light); display: block; font-weight: 600;">Tirsdag – Lørdag: Fra kl. 11:00</span>
-                  <span style="color: var(--text-dim); font-size: 0.85rem;">Søndag &amp; Mandag: Lukket eller efter særskilt aftale</span>
+                  <span style="color: var(--gold-light); display: block; font-weight: 600; font-size: 1rem;">Tirsdag – Lørdag: 12:00 – 20:00</span>
+                  <span style="color: var(--text-muted); font-size: 0.85rem; display: block;">Samt åbent ved særlige lejligheder (f.eks. Christianias fødselsdag)</span>
+                  <span style="color: var(--text-dim); font-size: 0.82rem;">Søndag &amp; Mandag: Lukket eller efter særskilt aftale</span>
                 </div>
               </li>
 
               <li class="info-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                 <div>
-                  <strong style="color: var(--text-main); display: block; font-size: 1.05rem;">Instagram &amp; DM</strong>
-                  <span style="color: var(--text-muted); display: block; font-size: 0.9rem;">Hurtigste kanal for beskeder, fotos og sketches</span>
-                  <a href="https://www.instagram.com/bohemiantattooparlour/" target="_blank" rel="noopener" style="color: var(--gold-light); text-decoration: underline; font-size: 0.95rem;">
+                  <strong style="color: var(--text-main); display: block; font-size: 1.05rem;">Instagram (Foretrukken Booking &amp; DM)</strong>
+                  <span style="color: var(--text-muted); display: block; font-size: 0.9rem;">Send os helst en direkte besked på Instagram for hurtigst svar</span>
+                  <a href="https://www.instagram.com/bohemiantattooparlour/" target="_blank" rel="noopener" style="color: var(--gold-light); text-decoration: underline; font-size: 0.95rem; font-weight: 600;">
                     @bohemiantattooparlour
+                  </a>
+                </div>
+              </li>
+
+              <li class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <div>
+                  <strong style="color: var(--text-main); display: block; font-size: 1.05rem;">E-mail</strong>
+                  <a href="mailto:info@bohemiantattooparlour.com" style="color: var(--gold-light); text-decoration: underline; font-size: 0.95rem;">
+                    info@bohemiantattooparlour.com
+                  </a>
+                </div>
+              </li>
+
+              <li class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                <div>
+                  <strong style="color: var(--text-main); display: block; font-size: 1.05rem;">Facebook Side</strong>
+                  <a href="https://www.facebook.com/bohemiantattooparlour" target="_blank" rel="noopener" style="color: var(--gold-light); text-decoration: underline; font-size: 0.95rem;">
+                    Bohemian tattoo parlour
                   </a>
                 </div>
               </li>
@@ -142,8 +205,7 @@
               <li class="info-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
                 <div>
-                  <strong style="color: var(--text-main); display: block; font-size: 1.05rem;">WhatsApp &amp; Spørgsmål</strong>
-                  <span style="color: var(--text-muted); display: block; font-size: 0.9rem;">Skriv direkte til tatovørerne i shoppen</span>
+                  <strong style="color: var(--text-main); display: block; font-size: 1.05rem;">WhatsApp</strong>
                   <a href="https://wa.me/4520000000" target="_blank" rel="noopener" style="color: var(--gold-light); text-decoration: underline; font-size: 0.95rem;">
                     Start en WhatsApp chat
                   </a>
@@ -248,9 +310,12 @@
       <div class="footer-emblem">
         <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Logo" class="footer-master-emblem" width="80" height="80">
       </div>
-      <h3 class="brand-title gold-gradient-text" style="font-size: 1.5rem; margin-bottom: 0.4rem;">BOHÉMIAN TATOO</h3>
-      <p style="font-size: 0.82rem; color: var(--gold-light); letter-spacing: 0.25em; text-transform: uppercase;">
+      <h3 class="brand-title gold-gradient-text" style="font-size: 1.5rem; margin-bottom: 0.4rem;">BOHÉMIAN TATTOO</h3>
+      <p style="font-size: 0.82rem; color: var(--gold-light); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.75rem;">
         PARLOUR • CHRISTIANIA, KØBENHAVN
+      </p>
+      <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+        Tirsdag – Lørdag: 12:00 – 20:00 • info@bohemiantattooparlour.com • Helst DM på Instagram
       </p>
 
       <ul class="footer-nav">
