@@ -54,8 +54,18 @@
 
   <!-- Top Announcement Bar -->
   <div class="announcement-bar">
-    <span class="badge-live" aria-hidden="true"></span>
-    <span><strong>Bohémian Tattoo Parlour</strong> • Christiania, København • A Safe Space For Good Tattoos &amp; Good People</span>
+    <div class="announcement-inner">
+      <div class="announcement-text">
+        <span class="badge-live" aria-hidden="true"></span>
+        <span data-i18n="announcement"><strong>Bohémian Tattoo Parlour</strong> • Christiania, København • A Safe Space For Good Tattoos &amp; Good People</span>
+      </div>
+      <div class="lang-selector" role="group" aria-label="Sprogvalg / Language selection">
+        <button type="button" class="lang-btn active" data-lang="da" aria-pressed="true" title="Dansk">🇩🇰 DA</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" title="English">🇬🇧 EN</button>
+        <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false" title="Svenska">🇸🇪 SV</button>
+        <button type="button" class="lang-btn" data-lang="de" aria-pressed="false" title="Deutsch">🇩🇪 DE</button>
+      </div>
+    </div>
   </div>
 
   <!-- Centered Top Header -->
@@ -66,18 +76,18 @@
           <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Christiania Logo" class="brand-master-emblem" width="90" height="90">
         </div>
         <h1 class="brand-title gold-gradient-text">BOHÉMIAN TATTOO</h1>
-        <span class="brand-tagline">PARLOUR • CHRISTIANIA, KØBENHAVN</span>
+        <span class="brand-tagline" data-i18n="nav_tagline">PARLOUR • CHRISTIANIA, KØBENHAVN</span>
       </a>
 
       <div class="nav-row">
         <nav aria-label="Hovednavigation">
           <ul class="nav-links">
-            <li><a href="index.html" class="nav-link">Forside</a></li>
-            <li><a href="om-os.html" class="nav-link">Om Studiet</a></li>
-            <li><a href="galleri.html" class="nav-link active">Tattoo Galleri</a></li>
-            <li><a href="artister.html" class="nav-link">Artister</a></li>
-            <li><a href="hygiejne.html" class="nav-link">Hygiejne &amp; Pleje</a></li>
-            <li><a href="kontakt.html" class="nav-link">Find Os</a></li>
+            <li><a href="index.html" class="nav-link" data-i18n="nav_home">Forside</a></li>
+            <li><a href="om-os.html" class="nav-link" data-i18n="nav_about">Om Studiet</a></li>
+            <li><a href="galleri.html" class="nav-link active" data-i18n="nav_gallery">Tattoo Galleri</a></li>
+            <li><a href="artister.html" class="nav-link" data-i18n="nav_artists">Artister</a></li>
+            <li><a href="hygiejne.html" class="nav-link" data-i18n="nav_hygiene">Hygiejne &amp; Pleje</a></li>
+            <li><a href="kontakt.html" class="nav-link" data-i18n="nav_contact_short">Find Os</a></li>
           </ul>
         </nav>
 
@@ -87,7 +97,7 @@
             <span>@bohemiantattooparlour</span>
           </a>
           <a href="kontakt.html" class="btn btn-primary">
-            <span>Kontakt Os</span>
+            <span data-i18n="nav_contact_btn">Kontakt Os</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -105,24 +115,35 @@
   <div class="mobile-nav-backdrop"></div>
   <div class="mobile-nav-drawer" id="mobile-menu" aria-hidden="true">
     <div>
-      <div class="brand-centerpiece" style="margin-bottom: 2rem;">
+      <div class="brand-centerpiece" style="margin-bottom: 1.5rem;">
         <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Logo" class="brand-master-emblem" style="width: 72px; height: 72px; margin-bottom: 0.5rem;">
         <span class="brand-title gold-gradient-text" style="font-size: 1.3rem;">BOHÉMIAN TATTOO</span>
-        <span class="brand-tagline">CHRISTIANIA • KØBENHAVN</span>
+        <span class="brand-tagline" data-i18n="nav_tagline">PARLOUR • CHRISTIANIA, KØBENHAVN</span>
       </div>
+
+      <!-- Mobile Language Selector -->
+      <div class="mobile-lang-selector" role="group" aria-label="Sprogvalg / Language selection">
+        <button type="button" class="lang-btn active" data-lang="da" aria-pressed="true">🇩🇰 Dansk</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">🇬🇧 English</button>
+        <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false">🇸🇪 Svenska</button>
+        <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">🇩🇪 Deutsch</button>
+      </div>
+
       <ul class="mobile-nav-links">
-        <li><a href="index.html" class="nav-link">Forside</a></li>
-        <li><a href="om-os.html" class="nav-link">Om Studiet</a></li>
-        <li><a href="galleri.html" class="nav-link active">Tattoo Galleri</a></li>
-        <li><a href="artister.html" class="nav-link">Artister &amp; Team</a></li>
-        <li><a href="hygiejne.html" class="nav-link">Hygiejne &amp; Pleje</a></li>
-        <li><a href="kontakt.html" class="nav-link">Find Os på Christiania</a></li>
+        <li><a href="index.html" class="nav-link" data-i18n="nav_home">Forside</a></li>
+        <li><a href="om-os.html" class="nav-link" data-i18n="nav_about">Om Studiet</a></li>
+        <li><a href="galleri.html" class="nav-link active" data-i18n="nav_gallery">Tattoo Galleri</a></li>
+        <li><a href="artister.html" class="nav-link" data-i18n="nav_artists_team">Artister &amp; Team</a></li>
+        <li><a href="hygiejne.html" class="nav-link" data-i18n="nav_hygiene">Hygiejne &amp; Pleje</a></li>
+        <li><a href="kontakt.html" class="nav-link" data-i18n="nav_contact">Find Os &amp; Kontakt</a></li>
       </ul>
     </div>
     <div>
-      <a href="kontakt.html" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;">Kontakt Studiet</a>
-      <a href="https://www.instagram.com/bohemiantattooparlour/" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; margin-bottom: 1rem;">DM på Instagram</a>
-      <p style="font-size: 0.8rem; color: var(--text-dim); text-align: center;">Christiania, København • More Art Less Bullshit</p>
+      <a href="kontakt.html" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;" data-i18n="nav_contact_studio">Kontakt Studiet</a>
+      <a href="https://www.instagram.com/bohemiantattooparlour/" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; margin-bottom: 1rem;">
+        <span data-i18n="btn_dm_insta">DM på Instagram</span>
+      </a>
+      <p style="font-size: 0.8rem; color: var(--text-dim); text-align: center;" data-i18n="nav_drawer_sub">Christiania, København • More Art Less Bullshit</p>
     </div>
   </div>
 
@@ -131,10 +152,10 @@
     <section class="page-header">
       <div class="container">
         <div class="section-badge">
-          <span>✦ Vores Portfolio &amp; Værker ✦</span>
+          <span data-i18n="gallery_badge">✦ Vores Portfolio &amp; Værker ✦</span>
         </div>
-        <h1 class="section-title">Tattoo <span class="gold-gradient-text">Galleri &amp; Flash</span></h1>
-        <p class="section-subtitle">
+        <h1 class="section-title"><span data-i18n="gallery_title_1">Udforsk Vores</span> <span class="gold-gradient-text" data-i18n="gallery_title_gold">Tattoo Galleri</span></h1>
+        <p class="section-subtitle" data-i18n="gallery_sub">
           Udforsk tatoveringer og motiver skabt hos Bohémian Tattoo Parlour på Christiania. Klik på et billede for at forstørre detaljerne og forespørge på et design.
         </p>
       </div>
@@ -145,11 +166,11 @@
       <div class="container">
         <!-- Filter Knapper -->
         <div class="gallery-filters" role="group" aria-label="Filtrer tatoveringer efter stil">
-          <button class="filter-btn active" data-filter="all">Alle Værker</button>
-          <button class="filter-btn" data-filter="blackwork">Blackwork</button>
-          <button class="filter-btn" data-filter="realism">Realisme</button>
-          <button class="filter-btn" data-filter="fineline">Fine Line</button>
-          <button class="filter-btn" data-filter="flash">Flash &amp; Segl</button>
+          <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Alle Værker</button>
+          <button class="filter-btn" data-filter="blackwork" data-i18n="filter_blackwork">Blackwork</button>
+          <button class="filter-btn" data-filter="realism" data-i18n="filter_realism">Realisme</button>
+          <button class="filter-btn" data-filter="fineline" data-i18n="filter_fineline">Fine Line</button>
+          <button class="filter-btn" data-filter="flash" data-i18n="filter_flash">Flash &amp; Segl</button>
         </div>
 
         <!-- Galleri Grid -->
@@ -338,23 +359,23 @@
         <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Logo" class="footer-master-emblem" width="80" height="80">
       </div>
       <h3 class="brand-title gold-gradient-text" style="font-size: 1.5rem; margin-bottom: 0.4rem;">BOHÉMIAN TATTOO</h3>
-      <p style="font-size: 0.82rem; color: var(--gold-light); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.75rem;">
+      <p style="font-size: 0.82rem; color: var(--gold-light); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.75rem;" data-i18n="nav_tagline">
         PARLOUR • CHRISTIANIA, KØBENHAVN
       </p>
-      <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+      <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;" data-i18n="footer_hours">
         Tirsdag – Lørdag: 12:00 – 20:00 • info@bohemiantattooparlour.com • Helst DM på Instagram
       </p>
 
       <ul class="footer-nav">
-        <li><a href="index.html" class="nav-link">Forside</a></li>
-        <li><a href="om-os.html" class="nav-link">Om Studiet</a></li>
-        <li><a href="galleri.html" class="nav-link active">Galleri</a></li>
-        <li><a href="artister.html" class="nav-link">Artister</a></li>
-        <li><a href="hygiejne.html" class="nav-link">Hygiejne &amp; Pleje</a></li>
-        <li><a href="kontakt.html" class="nav-link">Find Os &amp; Kontakt</a></li>
+        <li><a href="index.html" class="nav-link" data-i18n="nav_home">Forside</a></li>
+        <li><a href="om-os.html" class="nav-link" data-i18n="nav_about">Om Studiet</a></li>
+        <li><a href="galleri.html" class="nav-link active" data-i18n="nav_gallery">Galleri</a></li>
+        <li><a href="artister.html" class="nav-link" data-i18n="nav_artists">Artister</a></li>
+        <li><a href="hygiejne.html" class="nav-link" data-i18n="nav_hygiene">Hygiejne &amp; Pleje</a></li>
+        <li><a href="kontakt.html" class="nav-link" data-i18n="nav_contact">Find Os &amp; Kontakt</a></li>
       </ul>
 
-      <p class="footer-copy">
+      <p class="footer-copy" data-i18n="footer_copy">
         &copy; 2026 Bohémian Tattoo Parlour. Christiania, København. A safe space for good tattoos &amp; good people.
       </p>
     </div>
@@ -375,16 +396,17 @@
           <p id="lightbox-desc" style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;"></p>
           <a href="https://www.instagram.com/bohemiantattooparlour/" target="_blank" rel="noopener" class="btn btn-primary" id="lightbox-book-btn" style="width: 100%;">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            <span>Forespørg via Instagram DM</span>
+            <span data-i18n="lightbox_dm_btn">Forespørg via Instagram DM</span>
           </a>
           <a href="kontakt.html" class="btn btn-secondary" style="margin-top: 0.6rem; width: 100%; text-align: center;">
-            <span>Se Kontaktoplysninger</span>
+            <span data-i18n="lightbox_contact_btn">Se Kontaktoplysninger</span>
           </a>
         </div>
       </div>
     </div>
   </div>
 
+  <script src="assets/js/translations.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

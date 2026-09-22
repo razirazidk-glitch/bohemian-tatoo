@@ -54,8 +54,18 @@
 
   <!-- Top Announcement Bar -->
   <div class="announcement-bar">
-    <span class="badge-live" aria-hidden="true"></span>
-    <span><strong>Bohémian Tattoo Parlour</strong> • Christiania, København • A Safe Space For Good Tattoos &amp; Good People</span>
+    <div class="announcement-inner">
+      <div class="announcement-text">
+        <span class="badge-live" aria-hidden="true"></span>
+        <span data-i18n="announcement"><strong>Bohémian Tattoo Parlour</strong> • Christiania, København • A Safe Space For Good Tattoos &amp; Good People</span>
+      </div>
+      <div class="lang-selector" role="group" aria-label="Sprogvalg / Language selection">
+        <button type="button" class="lang-btn active" data-lang="da" aria-pressed="true" title="Dansk">🇩🇰 DA</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" title="English">🇬🇧 EN</button>
+        <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false" title="Svenska">🇸🇪 SV</button>
+        <button type="button" class="lang-btn" data-lang="de" aria-pressed="false" title="Deutsch">🇩🇪 DE</button>
+      </div>
+    </div>
   </div>
 
   <!-- Centered Top Header with Official Master Logo -->
@@ -66,18 +76,18 @@
           <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Christiania Logo" class="brand-master-emblem" width="90" height="90">
         </div>
         <h1 class="brand-title gold-gradient-text">BOHÉMIAN TATTOO</h1>
-        <span class="brand-tagline">PARLOUR • CHRISTIANIA, KØBENHAVN</span>
+        <span class="brand-tagline" data-i18n="nav_tagline">PARLOUR • CHRISTIANIA, KØBENHAVN</span>
       </a>
 
       <div class="nav-row">
         <nav aria-label="Hovednavigation">
           <ul class="nav-links">
-            <li><a href="index.html" class="nav-link active">Forside</a></li>
-            <li><a href="om-os.html" class="nav-link">Om Studiet</a></li>
-            <li><a href="galleri.html" class="nav-link">Tattoo Galleri</a></li>
-            <li><a href="artister.html" class="nav-link">Artister</a></li>
-            <li><a href="hygiejne.html" class="nav-link">Hygiejne &amp; Pleje</a></li>
-            <li><a href="kontakt.html" class="nav-link">Find Os</a></li>
+            <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Forside</a></li>
+            <li><a href="om-os.html" class="nav-link" data-i18n="nav_about">Om Studiet</a></li>
+            <li><a href="galleri.html" class="nav-link" data-i18n="nav_gallery">Tattoo Galleri</a></li>
+            <li><a href="artister.html" class="nav-link" data-i18n="nav_artists">Artister</a></li>
+            <li><a href="hygiejne.html" class="nav-link" data-i18n="nav_hygiene">Hygiejne &amp; Pleje</a></li>
+            <li><a href="kontakt.html" class="nav-link" data-i18n="nav_contact_short">Find Os</a></li>
           </ul>
         </nav>
 
@@ -87,7 +97,7 @@
             <span>@bohemiantattooparlour</span>
           </a>
           <a href="kontakt.html" class="btn btn-primary">
-            <span>Kontakt Os</span>
+            <span data-i18n="nav_contact_btn">Kontakt Os</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -105,26 +115,35 @@
   <div class="mobile-nav-backdrop"></div>
   <div class="mobile-nav-drawer" id="mobile-menu" aria-hidden="true">
     <div>
-      <div class="brand-centerpiece" style="margin-bottom: 2rem;">
+      <div class="brand-centerpiece" style="margin-bottom: 1.5rem;">
         <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Logo" class="brand-master-emblem" style="width: 72px; height: 72px; margin-bottom: 0.5rem;">
         <span class="brand-title gold-gradient-text" style="font-size: 1.3rem;">BOHÉMIAN TATTOO</span>
-        <span class="brand-tagline">CHRISTIANIA • KØBENHAVN</span>
+        <span class="brand-tagline" data-i18n="nav_tagline">PARLOUR • CHRISTIANIA, KØBENHAVN</span>
       </div>
+
+      <!-- Mobile Language Selector -->
+      <div class="mobile-lang-selector" role="group" aria-label="Sprogvalg / Language selection">
+        <button type="button" class="lang-btn active" data-lang="da" aria-pressed="true">🇩🇰 Dansk</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">🇬🇧 English</button>
+        <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false">🇸🇪 Svenska</button>
+        <button type="button" class="lang-btn" data-lang="de" aria-pressed="false">🇩🇪 Deutsch</button>
+      </div>
+
       <ul class="mobile-nav-links">
-        <li><a href="index.html" class="nav-link active">Forside</a></li>
-        <li><a href="om-os.html" class="nav-link">Om Studiet</a></li>
-        <li><a href="galleri.html" class="nav-link">Tattoo Galleri</a></li>
-        <li><a href="artister.html" class="nav-link">Artister &amp; Team</a></li>
-        <li><a href="hygiejne.html" class="nav-link">Hygiejne &amp; Pleje</a></li>
-        <li><a href="kontakt.html" class="nav-link">Find Os på Christiania</a></li>
+        <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Forside</a></li>
+        <li><a href="om-os.html" class="nav-link" data-i18n="nav_about">Om Studiet</a></li>
+        <li><a href="galleri.html" class="nav-link" data-i18n="nav_gallery">Tattoo Galleri</a></li>
+        <li><a href="artister.html" class="nav-link" data-i18n="nav_artists_team">Artister &amp; Team</a></li>
+        <li><a href="hygiejne.html" class="nav-link" data-i18n="nav_hygiene">Hygiejne &amp; Pleje</a></li>
+        <li><a href="kontakt.html" class="nav-link" data-i18n="nav_contact">Find Os &amp; Kontakt</a></li>
       </ul>
     </div>
     <div>
-      <a href="kontakt.html" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;">Kontakt Studiet</a>
+      <a href="kontakt.html" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;" data-i18n="nav_contact_studio">Kontakt Studiet</a>
       <a href="https://www.instagram.com/bohemiantattooparlour/" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; margin-bottom: 1rem;">
-        <span>DM på Instagram</span>
+        <span data-i18n="btn_dm_insta">DM på Instagram</span>
       </a>
-      <p style="font-size: 0.8rem; color: var(--text-dim); text-align: center;">Christiania, København • More Art Less Bullshit</p>
+      <p style="font-size: 0.8rem; color: var(--text-dim); text-align: center;" data-i18n="nav_drawer_sub">Christiania, København • More Art Less Bullshit</p>
     </div>
   </div>
 
@@ -136,22 +155,22 @@
           <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Christiania Officielt Segl" class="hero-master-emblem" width="200" height="200">
         </div>
         <div class="section-badge">
-          <span>✦ Fristaden Christiania • København ✦</span>
+          <span data-i18n="hero_badge">✦ Fristaden Christiania • København ✦</span>
         </div>
         <h1 class="hero-headline">
-          A Safe Space For <span class="gold-gradient-text">Good Tattoos</span> &amp; Good People
+          <span data-i18n="hero_title_1">A Safe Space For</span> <span class="gold-gradient-text" data-i18n="hero_title_gold">Good Tattoos</span> <span data-i18n="hero_title_2">&amp; Good People</span>
         </h1>
-        <p class="hero-description">
+        <p class="hero-description" data-i18n="hero_desc">
           Velkommen til <strong>Bohémian Tattoo Parlour</strong>. Et uafhængigt tatoveringsstudie i hjertet af Christiania, hvor kunstnerisk frihed, kompromisløst håndværk og tryghed forenes. Specialister i <em>Blackwork, Fine Line, Traditional &amp; Realism</em>.
         </p>
 
         <div class="hero-cta-group">
           <a href="galleri.html" class="btn btn-primary">
-            <span>Udforsk Vores Galleri</span>
+            <span data-i18n="hero_btn_gallery">Udforsk Vores Galleri</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
           <a href="kontakt.html" class="btn btn-secondary">
-            <span>Find Os &amp; Kontaktoplysninger</span>
+            <span data-i18n="hero_btn_contact">Find Os &amp; Kontaktoplysninger</span>
           </a>
         </div>
 
@@ -160,24 +179,24 @@
           <div class="trust-item">
             <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             <div>
-              <div class="trust-title">Klinisk Hygiejne</div>
-              <div class="trust-desc">Registreret &amp; godkendt hos Sikkerhedsstyrelsen</div>
+              <div class="trust-title" data-i18n="trust_hygiene_title">Klinisk Hygiejne</div>
+              <div class="trust-desc" data-i18n="trust_hygiene_desc">Registreret &amp; godkendt hos Sikkerhedsstyrelsen</div>
             </div>
           </div>
 
           <div class="trust-item">
             <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             <div>
-              <div class="trust-title">Vegansk REACH Blæk</div>
-              <div class="trust-desc">100% EU-certificeret &amp; allergitestet kvalitet</div>
+              <div class="trust-title" data-i18n="trust_vegan_title">Vegansk REACH Blæk</div>
+              <div class="trust-desc" data-i18n="trust_vegan_desc">100% sterile engangsnåle og EU-godkendt blæk</div>
             </div>
           </div>
 
           <div class="trust-item">
             <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <div>
-              <div class="trust-title">Custom &amp; Flash Art</div>
-              <div class="trust-desc">Unikke designs tilpasset din krop</div>
+              <div class="trust-title" data-i18n="trust_custom_title">100% Custom Design</div>
+              <div class="trust-desc" data-i18n="trust_custom_desc">Unikke motiver tilpasset din krop og personlige historie</div>
             </div>
           </div>
 
@@ -197,18 +216,18 @@
       <div class="container">
         <div class="about-grid">
           <div class="about-text">
-            <div class="section-badge">Om Bohémian Tattoo Parlour</div>
-            <h2 class="section-title">Hjertet af Christiania: <span class="gold-gradient-text">More Art, Less Bullshit</span></h2>
-            <p>
-              Bohémian Tattoo Parlour er skabt som et trygt, rummeligt og kunstnerisk helle midt i Fristadens frodige natur. Vi tror på, at en god tatovering skabes i et tillidsfuldt fællesskab mellem tatovør og kunde.
+            <div class="section-badge" data-i18n="index_about_badge">✦ Fristadens Ånd ✦</div>
+            <h2 class="section-title"><span data-i18n="index_about_title_1">Et Trygt Rum For</span> <span class="gold-gradient-text" data-i18n="index_about_title_gold">God Kunst &amp; Gode Folk</span></h2>
+            <p data-i18n="index_about_p1">
+              I hjertet af Christiania har vi skabt et tatoveringsstudie med en helt særlig sjæl. Vores filosofi er enkel: <em>More Art, Less Bullshit</em>. Vi tager os tid til hver enkelt kunde i en afslappet, varm og imødekommende boheme-atmosfære.
             </p>
-            <p>
-              Her er ingen forhastede samlebåndsløsninger. Vi sætter os ned med dig over en god kop kaffe, diskuterer dine idéer, tilpasser motivet til kroppens linjer og sikrer, at oplevelsen bliver lige så mindeværdig som resultatet.
+            <p data-i18n="index_about_p2">
+              Uanset om det er din allerførste tatovering eller et stort fler-sessioners projekt, møder vi dig i øjenhøjde med empati, kompromisløs hygiejne og dyb kærlighed til faget.
             </p>
 
             <div style="margin-top: 2rem;">
               <a href="om-os.html" class="btn btn-primary">
-                <span>Læs Vores Historie &amp; Filosofi</span>
+                <span data-i18n="index_about_btn">Læs Mere Om Studiet &amp; Christiania</span>
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
@@ -239,10 +258,10 @@
     <section>
       <div class="container">
         <div class="text-center" style="max-width: 720px; margin: 0 auto 3rem auto;">
-          <div class="section-badge">Autentisk Håndværk</div>
-          <h2 class="section-title">Udvalgte <span class="gold-gradient-text">Tatoveringer</span></h2>
-          <p class="section-subtitle">
-            Et lille udpluk af vores nyligt udførte tatoveringer fra shoppen. Besøg det fulde galleri for at se alle 16+ motiver og filtrere efter stilart.
+          <div class="section-badge" data-i18n="index_gallery_badge">✦ Udvalgte Værker ✦</div>
+          <h2 class="section-title"><span data-i18n="index_gallery_title_1">Håndværk med</span> <span class="gold-gradient-text" data-i18n="index_gallery_title_gold">Sjæl &amp; Præcision</span></h2>
+          <p class="section-subtitle" data-i18n="index_gallery_desc">
+            Se et udpluk af vores seneste tatoveringer. Vi mestrer mørk blackwork, fine line botanik, kranier, traditionel tatovering og fotorealisme.
           </p>
         </div>
 
@@ -298,7 +317,7 @@
 
         <div class="text-center" style="margin-top: 3rem;">
           <a href="galleri.html" class="btn btn-primary" style="padding: 1rem 2rem;">
-            <span>Se Det Komplette Galleri (16+ Billeder)</span>
+            <span data-i18n="index_gallery_btn">Se Det Komplette Galleri (16+ Billeder)</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -309,10 +328,10 @@
     <section style="background: var(--bg-surface); border-top: 1px solid var(--gold-border); border-bottom: 1px solid var(--gold-border);">
       <div class="container">
         <div class="text-center" style="max-width: 720px; margin: 0 auto 3rem auto;">
-          <div class="section-badge">Mød Holdet</div>
-          <h2 class="section-title">Vores <span class="gold-gradient-text">Tatovører</span></h2>
-          <p class="section-subtitle">
-            Hver kunstner hos Bohémian Tattoo Parlour bringer sin egen unikke vision, speciale og mangeårige erfaring.
+          <div class="section-badge" data-i18n="index_artists_badge">✦ Mød Holdet ✦</div>
+          <h2 class="section-title"><span data-i18n="index_artists_title_1">Vores Passionerede</span> <span class="gold-gradient-text" data-i18n="index_artists_title_gold">Artister</span></h2>
+          <p class="section-subtitle" data-i18n="index_artists_desc">
+            Mød vores faste tatovører og læs om deres individuelle kunstneriske specialer.
           </p>
         </div>
 
@@ -360,7 +379,7 @@
 
         <div class="text-center" style="margin-top: 2.5rem;">
           <a href="artister.html" class="btn btn-primary">
-            <span>Se Alle Artister &amp; Gæstetatovører</span>
+            <span data-i18n="index_artists_btn">Mød Alle Artister &amp; Gæster</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -371,10 +390,10 @@
     <section>
       <div class="container">
         <div class="text-center" style="max-width: 700px; margin: 0 auto 3rem auto;">
-          <div class="section-badge">Sikkerhed Frem For Alt</div>
-          <h2 class="section-title">Klinisk <span class="gold-gradient-text">Hygiejne &amp; Pleje</span></h2>
-          <p class="section-subtitle">
-            Vi går aldrig på kompromis med din sikkerhed. Studiet er fuldt autoriseret og overholder de strengeste sundhedskrav.
+          <div class="section-badge" data-i18n="index_hygiene_badge">✦ Din Tryghed ✦</div>
+          <h2 class="section-title"><span data-i18n="index_hygiene_title_1">Klinisk Renhed &amp;</span> <span class="gold-gradient-text" data-i18n="index_hygiene_title_gold">Lovpligtig Sikkerhed</span></h2>
+          <p class="section-subtitle" data-i18n="index_hygiene_desc">
+            Vi er officielt registreret hos Sikkerhedsstyrelsen og anvender udelukkende EU REACH-godkendte veganske farver, engangsudstyr og sterile procedurer.
           </p>
         </div>
 
@@ -398,7 +417,7 @@
 
         <div class="text-center">
           <a href="hygiejne.html" class="btn btn-secondary">
-            <span>Læs Vores Hygiejneprotokol &amp; Aftercare Guide</span>
+            <span data-i18n="index_hygiene_btn">Læs Vores Hygiejneprotokol &amp; Aftercare</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -411,26 +430,26 @@
         <div class="banner-emblem-wrapper">
           <img src="assets/images/bohemian-master-logo.jpg" alt="Bohemian Tattoo Parlour Logo" class="banner-master-emblem" width="100" height="100">
         </div>
-        <div class="section-badge">✦ Boheme • Hippie • Krystaller • Natur ✦</div>
+        <div class="section-badge" data-i18n="banner_badge">✦ Boheme • Hippie • Krystaller • Natur ✦</div>
         <h2 style="font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 1.25rem;">
-          Klar Til Din Næste <span class="gold-gradient-text">Tatovering?</span>
+          <span data-i18n="banner_title_1">Klar Til Din Næste</span> <span class="gold-gradient-text" data-i18n="banner_title_gold">Tatovering?</span>
         </h2>
-        <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.75rem; max-width: 680px; margin-left: auto; margin-right: auto;">
+        <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.75rem; max-width: 680px; margin-left: auto; margin-right: auto;" data-i18n="banner_desc">
           Uanset om du har en færdig idé, en skitse eller blot vil have vejledning om stil og placering, står vi klar til at hjælpe dig i vores hyggelige oase på Christiania.
         </p>
 
         <div style="display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(0,0,0,0.4); border: 1px solid var(--gold-border); padding: 0.75rem 1.5rem; border-radius: var(--radius-full); margin-bottom: 2.25rem; font-size: 0.9rem; color: var(--gold-light);">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span>Åbningstider: <strong>Tirsdag – Lørdag kl. 12:00 – 20:00</strong> (og ved særlige anledninger)</span>
+          <span data-i18n="banner_hours">Åbningstider: <strong>Tirsdag – Lørdag kl. 12:00 – 20:00</strong> (og ved særlige anledninger)</span>
         </div>
 
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
           <a href="https://www.instagram.com/bohemiantattooparlour/" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 1rem 1.8rem;">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            <span>Send DM på Instagram (Hurtigst Svar)</span>
+            <span data-i18n="btn_dm_fast">Send DM på Instagram (Hurtigst Svar)</span>
           </a>
           <a href="kontakt.html" class="btn btn-secondary" style="padding: 1rem 1.8rem;">
-            <span>Se Alle Kontaktoplysninger</span>
+            <span data-i18n="btn_see_contact">Se Alle Kontaktoplysninger</span>
           </a>
         </div>
 
@@ -450,28 +469,29 @@
         <img src="assets/images/bohemian-master-logo.jpg" alt="Bohémian Tattoo Parlour Logo" class="footer-master-emblem" width="80" height="80">
       </div>
       <h3 class="brand-title gold-gradient-text" style="font-size: 1.5rem; margin-bottom: 0.4rem;">BOHÉMIAN TATTOO</h3>
-      <p style="font-size: 0.82rem; color: var(--gold-light); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.75rem;">
+      <p style="font-size: 0.82rem; color: var(--gold-light); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.75rem;" data-i18n="nav_tagline">
         PARLOUR • CHRISTIANIA, KØBENHAVN
       </p>
-      <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+      <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;" data-i18n="footer_hours">
         Tirsdag – Lørdag: 12:00 – 20:00 • E-mail: info@bohemiantattooparlour.com • Helst DM på Instagram
       </p>
 
       <ul class="footer-nav">
-        <li><a href="index.html" class="nav-link active">Forside</a></li>
-        <li><a href="om-os.html" class="nav-link">Om Studiet</a></li>
-        <li><a href="galleri.html" class="nav-link">Tattoo Galleri</a></li>
-        <li><a href="artister.html" class="nav-link">Artister</a></li>
-        <li><a href="hygiejne.html" class="nav-link">Hygiejne &amp; Pleje</a></li>
-        <li><a href="kontakt.html" class="nav-link">Kontakt &amp; Find Os</a></li>
+        <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Forside</a></li>
+        <li><a href="om-os.html" class="nav-link" data-i18n="nav_about">Om Studiet</a></li>
+        <li><a href="galleri.html" class="nav-link" data-i18n="nav_gallery">Tattoo Galleri</a></li>
+        <li><a href="artister.html" class="nav-link" data-i18n="nav_artists">Artister</a></li>
+        <li><a href="hygiejne.html" class="nav-link" data-i18n="nav_hygiene">Hygiejne &amp; Pleje</a></li>
+        <li><a href="kontakt.html" class="nav-link" data-i18n="nav_contact">Kontakt &amp; Find Os</a></li>
       </ul>
 
-      <p class="footer-copy">
+      <p class="footer-copy" data-i18n="footer_copy">
         &copy; 2026 Bohémian Tattoo Parlour. Christiania, København. A safe space for good tattoos &amp; good people.
       </p>
     </div>
   </footer>
 
+  <script src="assets/js/translations.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

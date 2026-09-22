@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initI18n();
   initMobileNavigation();
   initGalleryFiltersAndLightbox();
   initAftercareAccordion();
@@ -247,4 +248,61 @@ function initHeaderScrollEffect() {
       header.style.boxShadow = 'none';
     }
   });
+}
+
+/* --------------------------------------------------------------------------
+   6. MULTILINGUAL I18N (Dansk førstevalg, English, Svenska, Deutsch)
+   -------------------------------------------------------------------------- */
+function initI18n() {
+  const supportedLangs = ['da', 'en', 'sv', 'de'];
+  const defaultLang = 'da';
+
+  // Get saved language or fallback to Danish
+  let currentLang = localStorage.getItem('bt_lang');
+  if (!supportedLangs.includes(currentLang)) {
+    currentLang = defaultLang;
+  }
+
+  function applyLanguage(lang) {
+    if (!supportedLangs.includes(lang)) lang = defaultLang;
+    currentLang = lang;
+    localStorage.setItem('bt_lang', lang);
+    document.documentElement.lang = lang;
+
+    if (typeof translations === 'undefined' || !translations[lang]) return;
+    const dict = translations[lang];
+
+    // Translate all elements with data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) {
+        el.innerHTML = dict[key];
+      }
+    });
+
+    // Update active states on all language buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      if (btn.getAttribute('data-lang') === lang) {
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+      } else {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+      }
+    });
+  }
+
+  // Bind click event to all language buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetLang = btn.getAttribute('data-lang');
+      if (targetLang) {
+        applyLanguage(targetLang);
+      }
+    });
+  });
+
+  // Execute initial application
+  applyLanguage(currentLang);
 }
