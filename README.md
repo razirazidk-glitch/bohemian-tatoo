@@ -1,6 +1,10 @@
 # Bohemian Tatoo — Christiania, København ✦
 
-Velkommen til det officielle websted for **Bohemian Tatoo**, beliggende i hjertet af Fristaden Christiania i København.
+> 🌐 **Live Website Link**: [https://razirazidk-glitch.github.io/bohemian-tatoo/](https://razirazidk-glitch.github.io/bohemian-tatoo/)  
+> 📂 **GitHub Repository**: [https://github.com/razirazidk-glitch/bohemian-tatoo](https://github.com/razirazidk-glitch/bohemian-tatoo)  
+> 📸 **Instagram**: [@bohemiantattooparlour](https://www.instagram.com/bohemiantattooparlour/)
+
+Velkommen til det officielle websted for **Bohemian Tatoo** (Bohémian Tattoo Parlour), beliggende i hjertet af Fristaden Christiania i København.
 
 Dette websted er udviklet som en luksuriøs, responsiv og lynhurtig platform for tatovørstudiet. Designet forener Fristadens kreative, boheme ånd med kompromisløs professionalisme, klinisk hygiejne og moderne webstandarder.
 
