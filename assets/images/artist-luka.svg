@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="artBg2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1f1e24" />
+      <stop offset="100%" stop-color="#0a0a0c" />
+    </radialGradient>
+    <linearGradient id="artGold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faecc1" />
+      <stop offset="100%" stop-color="#d4af37" />
+    </linearGradient>
+    <clipPath id="circleClip2">
+      <circle cx="200" cy="200" r="175" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="url(#artGold2)" stroke-width="1.5" stroke-dasharray="4 8" />
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#artGold2)" stroke-width="1" />
+  <circle cx="200" cy="200" r="175" fill="url(#artBg2)" />
+
+  <g clip-path="url(#circleClip2)">
+    <!-- Shoulders / Torso with black tattoo tank top -->
+    <path d="M 80,380 C 90,290 130,265 200,265 C 270,265 310,290 320,380 Z" fill="#141318" stroke="url(#artGold2)" stroke-width="1.5" />
+
+    <!-- Tattooed neck with sacred geometry lines -->
+    <rect x="175" y="200" width="50" height="75" fill="#2c2a32" />
+    <line x1="185" y1="215" x2="215" y2="245" stroke="url(#artGold2)" stroke-width="1.2" />
+    <line x1="215" y1="215" x2="185" y2="245" stroke="url(#artGold2)" stroke-width="1.2" />
+    <circle cx="200" cy="230" r="3" fill="url(#artGold2)" />
+
+    <!-- Head / Jawline with sculpted beard -->
+    <ellipse cx="200" cy="165" rx="46" ry="56" fill="#38343f" />
+
+    <!-- Short cropped hair & fade -->
+    <path d="M 152,150 C 152,100 170,80 200,80 C 230,80 248,100 248,150 C 248,160 242,165 240,165 C 238,130 220,95 200,95 C 180,95 162,130 160,165 C 158,165 152,160 152,150 Z" fill="#121115" stroke="url(#artGold2)" stroke-width="0.8" />
+
+    <!-- Stylized Beard -->
+    <path d="M 160,175 C 160,240 180,250 200,250 C 220,250 240,240 240,175 C 235,190 220,205 200,205 C 180,205 165,190 160,175 Z" fill="#121115" stroke="url(#artGold2)" stroke-width="1" />
+
+    <!-- Focused Eyes & Brows -->
+    <line x1="175" y1="150" x2="192" y2="152" stroke="url(#artGold2)" stroke-width="2" stroke-linecap="round" />
+    <line x1="208" y1="152" x2="225" y2="150" stroke="url(#artGold2)" stroke-width="2" stroke-linecap="round" />
+    <circle cx="184" cy="160" r="2.5" fill="url(#artGold2)" />
+    <circle cx="216" cy="160" r="2.5" fill="url(#artGold2)" />
+  </g>
+</svg>

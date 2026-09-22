@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="artBg3" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#261e24" />
+      <stop offset="100%" stop-color="#0d0a0e" />
+    </radialGradient>
+    <linearGradient id="artGold3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faecc1" />
+      <stop offset="100%" stop-color="#d4af37" />
+    </linearGradient>
+    <clipPath id="circleClip3">
+      <circle cx="200" cy="200" r="175" />
+    </clipPath>
+  </defs>
+
+  <circle cx="200" cy="200" r="195" fill="none" stroke="url(#artGold3)" stroke-width="1.5" stroke-dasharray="2 5" />
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#artGold3)" stroke-width="1" />
+  <circle cx="200" cy="200" r="175" fill="url(#artBg3)" />
+
+  <g clip-path="url(#circleClip3)">
+    <!-- Shoulders / Torso -->
+    <path d="M 85,380 C 95,295 135,268 200,268 C 265,268 305,295 315,380 Z" fill="#1b1720" stroke="url(#artGold3)" stroke-width="1.5" />
+
+    <!-- Neck with vintage collar & pendant -->
+    <rect x="180" y="205" width="40" height="70" fill="#322a36" />
+    <path d="M 185,250 Q 200,262 215,250" fill="none" stroke="url(#artGold3)" stroke-width="1.8" />
+    <polygon points="200,260 205,270 200,278 195,270" fill="url(#artGold3)" />
+
+    <!-- Head / Face -->
+    <ellipse cx="200" cy="168" rx="44" ry="55" fill="#3a303e" />
+
+    <!-- Vintage Victory Roll / Edgy Neo-Trad Hair -->
+    <path d="M 148,160 C 145,95 160,75 200,75 C 240,75 255,95 252,160 C 262,230 255,300 250,330 C 235,260 230,220 230,195 C 200,210 170,195 170,195 C 170,220 165,260 150,330 C 145,300 138,230 148,160 Z" fill="#17121c" stroke="url(#artGold3)" stroke-width="0.8" />
+
+    <!-- Hair Roll / Rose accent -->
+    <circle cx="225" cy="115" r="18" fill="#541b2e" stroke="url(#artGold3)" stroke-width="1.2" />
+    <path d="M 218,115 Q 225,108 232,115 Q 225,122 218,115" fill="none" stroke="url(#artGold3)" stroke-width="1" />
+
+    <!-- Eyes with classic cat-eye liner -->
+    <path d="M 175,160 Q 185,155 194,162" fill="none" stroke="url(#artGold3)" stroke-width="2" />
+    <path d="M 225,160 Q 215,155 206,162" fill="none" stroke="url(#artGold3)" stroke-width="2" />
+    <circle cx="184" cy="163" r="2.5" fill="url(#artGold3)" />
+    <circle cx="216" cy="163" r="2.5" fill="url(#artGold3)" />
+    <!-- Bold Lips -->
+    <path d="M 192,204 Q 200,208 208,204" fill="none" stroke="#a0304c" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>

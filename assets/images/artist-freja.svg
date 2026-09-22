@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="artBg1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#222026" />
+      <stop offset="100%" stop-color="#0d0d10" />
+    </radialGradient>
+    <linearGradient id="artGold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faecc1" />
+      <stop offset="100%" stop-color="#d4af37" />
+    </linearGradient>
+    <clipPath id="circleClip1">
+      <circle cx="200" cy="200" r="175" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="url(#artGold1)" stroke-width="1.5" stroke-dasharray="3 6" />
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#artGold1)" stroke-width="1" />
+  <circle cx="200" cy="200" r="175" fill="url(#artBg1)" />
+
+  <g clip-path="url(#circleClip1)">
+    <!-- Stylized Silhouette / Artistic Portrait of Freja -->
+    <!-- Shoulders / Torso -->
+    <path d="M 90,380 C 100,300 140,270 200,270 C 260,270 300,300 310,380 Z" fill="#18181f" stroke="url(#artGold1)" stroke-width="1.5" />
+
+    <!-- Neck -->
+    <rect x="180" y="210" width="40" height="70" fill="#2d2a32" />
+    <!-- Delicate throat tattoo -->
+    <path d="M 190,240 Q 200,248 210,240" fill="none" stroke="url(#artGold1)" stroke-width="1.5" />
+    <circle cx="200" cy="250" r="2" fill="url(#artGold1)" />
+
+    <!-- Head / Face silhouette -->
+    <ellipse cx="200" cy="170" rx="45" ry="58" fill="#36323c" />
+
+    <!-- Flowing Hair -->
+    <path d="M 145,170 C 145,110 160,85 200,85 C 240,85 255,110 255,170 C 255,230 265,280 270,320 C 240,290 235,220 235,220 C 200,230 165,220 165,220 C 165,220 160,290 130,320 C 135,280 145,230 145,170 Z" fill="#151419" stroke="url(#artGold1)" stroke-width="0.8" />
+
+    <!-- Botanical hair wreath (Freja's trademark) -->
+    <path d="M 155,130 Q 200,105 245,130" fill="none" stroke="url(#artGold1)" stroke-width="1.5" />
+    <circle cx="165" cy="125" r="3" fill="url(#artGold1)" />
+    <circle cx="185" cy="115" r="3.5" fill="url(#artGold1)" />
+    <circle cx="200" cy="112" r="4" fill="url(#artGold1)" />
+    <circle cx="215" cy="115" r="3.5" fill="url(#artGold1)" />
+    <circle cx="235" cy="125" r="3" fill="url(#artGold1)" />
+
+    <!-- Delicate facial features / glasses -->
+    <circle cx="185" cy="170" r="10" fill="none" stroke="url(#artGold1)" stroke-width="1.2" />
+    <circle cx="215" cy="170" r="10" fill="none" stroke="url(#artGold1)" stroke-width="1.2" />
+    <line x1="195" y1="170" x2="205" y2="170" stroke="url(#artGold1)" stroke-width="1.2" />
+    <!-- Gentle lips -->
+    <path d="M 194,202 Q 200,205 206,202" fill="none" stroke="url(#artGold1)" stroke-width="1.2" />
+  </g>
+</svg>

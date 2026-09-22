@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="darkBg3" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#16151a" />
+      <stop offset="100%" stop-color="#08080a" />
+    </radialGradient>
+    <linearGradient id="gold3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faecc1" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#996f12" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#darkBg3)" />
+
+  <!-- Background sacred geometry hexagon -->
+  <polygon points="300,100 480,205 480,415 300,520 120,415 120,205" fill="none" stroke="url(#gold3)" stroke-width="1" opacity="0.4" stroke-dasharray="3 6" />
+
+  <!-- Geometric Polygon Wolf / Totem Head -->
+  <g stroke="url(#gold3)" stroke-width="1.8" stroke-linejoin="round" fill="none">
+    <!-- Center forehead line -->
+    <line x1="300" y1="210" x2="300" y2="380" />
+
+    <!-- Forehead facets -->
+    <polygon points="300,210 260,260 300,300" />
+    <polygon points="300,210 340,260 300,300" />
+
+    <!-- Ears -->
+    <polygon points="260,260 210,170 235,260" fill="#181822" />
+    <polygon points="340,260 390,170 365,260" fill="#181822" />
+
+    <!-- Outer cheeks / Temples -->
+    <polygon points="235,260 200,340 260,340" />
+    <polygon points="365,260 400,340 340,340" />
+
+    <!-- Eyes area -->
+    <polygon points="260,260 260,340 300,300" />
+    <polygon points="340,260 340,340 300,300" />
+    <polygon points="260,340 285,350 300,300" fill="url(#gold3)" fill-opacity="0.2" />
+    <polygon points="340,340 315,350 300,300" fill="url(#gold3)" fill-opacity="0.2" />
+
+    <!-- Snout and Bridge -->
+    <polygon points="285,350 300,380 300,450 280,440" />
+    <polygon points="315,350 300,380 300,450 320,440" />
+    <polygon points="260,340 285,350 280,440 240,410" />
+    <polygon points="340,340 315,350 320,440 360,410" />
+
+    <!-- Nose tip -->
+    <polygon points="280,440 320,440 300,465" fill="url(#gold3)" />
+
+    <!-- Lower Jaw / Muzzle -->
+    <polygon points="280,440 300,465 290,490 270,460" />
+    <polygon points="320,440 300,465 310,490 330,460" />
+    <polygon points="290,490 310,490 300,520" fill="url(#gold3)" fill-opacity="0.4" />
+  </g>
+
+  <!-- Surrounding Mandalas & Rays -->
+  <g stroke="url(#gold3)" stroke-width="1.2" opacity="0.6">
+    <circle cx="300" cy="350" r="190" fill="none" stroke-dasharray="4 8" />
+    <circle cx="300" cy="350" r="215" fill="none" stroke-width="0.8" />
+    
+    <!-- Arrows / sacred rays pointing outwards -->
+    <line x1="300" y1="130" x2="300" y2="80" stroke-width="2" />
+    <circle cx="300" cy="74" r="3" fill="url(#gold3)" />
+
+    <line x1="300" y1="570" x2="300" y2="620" stroke-width="2" />
+    <circle cx="300" cy="626" r="3" fill="url(#gold3)" />
+  </g>
+
+  <!-- Typography Caption -->
+  <text x="300" y="720" fill="url(#gold3)" font-family="'Cinzel', serif" font-size="18" font-weight="600" letter-spacing="6" text-anchor="middle">
+    GEOMETRISK TOTEM
+  </text>
+  <text x="300" y="745" fill="#a09e99" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" letter-spacing="3" text-anchor="middle">
+    BLACKWORK &amp; SACRED GEOMETRY
+  </text>
+</svg>

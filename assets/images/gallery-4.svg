@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="darkBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#18181f" />
+      <stop offset="100%" stop-color="#0a0a0c" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faecc1" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#916c10" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#darkBg)" />
+
+  <!-- Subtle grid texture -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <circle cx="300" cy="400" r="280" fill="none" />
+    <circle cx="300" cy="400" r="220" fill="none" stroke-dasharray="3 6" />
+    <circle cx="300" cy="400" r="160" fill="none" />
+    <circle cx="300" cy="400" r="90" fill="none" stroke-dasharray="2 4" />
+  </g>
+
+  <!-- Outer Runic Ring with stylized Nordic runes -->
+  <g stroke="url(#gold)" stroke-width="1.8" fill="none" opacity="0.85">
+    <circle cx="300" cy="400" r="240" />
+    <circle cx="300" cy="400" r="228" stroke-width="0.8" stroke-dasharray="4 6" />
+  </g>
+
+  <!-- Central Vegvisir / Nordic Compass Motif in Gold -->
+  <g transform="translate(300, 400)" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <!-- Central Circle -->
+    <circle cx="0" cy="0" r="14" fill="#0e0e12" stroke-width="2" />
+    <circle cx="0" cy="0" r="5" fill="url(#gold)" stroke="none" />
+
+    <!-- 8 Main Staves -->
+    <!-- North -->
+    <line x1="0" y1="-14" x2="0" y2="-150" />
+    <path d="M -18,-90 L 0,-110 L 18,-90" fill="none" />
+    <circle cx="0" cy="-150" r="4" fill="url(#gold)" stroke="none" />
+    <line x1="-12" y1="-135" x2="12" y2="-135" />
+    <line x1="-20" y1="-125" x2="20" y2="-125" />
+
+    <!-- South -->
+    <line x1="0" y1="14" x2="0" y2="150" />
+    <path d="M -15,85 L 0,105 L 15,85" fill="none" />
+    <circle cx="0" cy="150" r="4" fill="url(#gold)" stroke="none" />
+    <line x1="-14" y1="130" x2="14" y2="130" />
+    <line x1="-8" y1="140" x2="8" y2="140" />
+
+    <!-- East -->
+    <line x1="14" y1="0" x2="150" y2="0" />
+    <path d="M 85,-15 L 105,0 L 85,15" fill="none" />
+    <circle cx="150" cy="0" r="4" fill="url(#gold)" stroke="none" />
+    <line x1="130" y1="-14" x2="130" y2="14" />
+    <line x1="140" y1="-8" x2="140" y2="8" />
+
+    <!-- West -->
+    <line x1="-14" y1="0" x2="-150" y2="0" />
+    <path d="M -85,-15 L -105,0 L -85,15" fill="none" />
+    <circle cx="-150" cy="0" r="4" fill="url(#gold)" stroke="none" />
+    <line x1="-130" y1="-14" x2="-130" y2="14" />
+    <line x1="-140" y1="-8" x2="-140" y2="8" />
+
+    <!-- Diagonal NW -->
+    <line x1="-10" y1="-10" x2="-110" y2="-110" />
+    <line x1="-95" y1="-80" x2="-80" y2="-95" />
+    <circle cx="-110" cy="-110" r="3.5" fill="url(#gold)" stroke="none" />
+
+    <!-- Diagonal NE -->
+    <line x1="10" y1="-10" x2="110" y2="-110" />
+    <line x1="95" y1="-80" x2="80" y2="-95" />
+    <circle cx="110" cy="-110" r="3.5" fill="url(#gold)" stroke="none" />
+
+    <!-- Diagonal SW -->
+    <line x1="-10" y1="10" x2="-110" y2="110" />
+    <line x1="-95" y1="80" x2="-80" y2="95" />
+    <circle cx="-110" cy="110" r="3.5" fill="url(#gold)" stroke="none" />
+
+    <!-- Diagonal SE -->
+    <line x1="10" y1="10" x2="110" y2="110" />
+    <line x1="95" y1="80" x2="80" y2="95" />
+    <circle cx="110" cy="110" r="3.5" fill="url(#gold)" stroke="none" />
+  </g>
+
+  <!-- Bohemian Dotwork Rings and Stippling -->
+  <g fill="url(#gold)" opacity="0.6">
+    <circle cx="300" cy="180" r="3" />
+    <circle cx="300" cy="195" r="2" />
+    <circle cx="300" cy="205" r="1.5" />
+    <circle cx="300" cy="620" r="3" />
+    <circle cx="300" cy="605" r="2" />
+    <circle cx="300" cy="595" r="1.5" />
+  </g>
+
+  <!-- Typography Caption -->
+  <text x="300" y="720" fill="url(#gold)" font-family="'Cinzel', serif" font-size="18" font-weight="600" letter-spacing="6" text-anchor="middle">
+    NORDISK VEGVISIR
+  </text>
+  <text x="300" y="745" fill="#a09e99" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" letter-spacing="3" text-anchor="middle">
+    DOTWORK &amp; SACRED NORDIC INK
+  </text>
+</svg>
